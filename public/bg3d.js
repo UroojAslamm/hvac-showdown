@@ -179,7 +179,7 @@ function run(THREE, canvas, api, { phone = false } = {}) {
   const SHOTS = phone
     ? { lobby: { r: 15, h: 4, ty: -0.6, sp: 0.15 }, play: { r: 16, h: 7, ty: 1.4, sp: 0.06 }, reveal: { r: 17, h: 3.5, ty: -2.1, sp: 0.2 }, final: { r: 17, h: 3, ty: -2.1, sp: 0.25 } }
     // desktop: look below the unit so its face sits in the top half, above the lobby/final text
-    : { lobby: { r: 23, h: 3.8, ty: -2.4, sp: 0.12 }, play: { r: 15, h: 7, ty: 0.9, sp: 0.05 }, reveal: { r: 11, h: 3.5, ty: 1.6, sp: 0.18 }, final: { r: 21, h: 3, ty: -2.4, sp: 0.22 } };
+    : { lobby: { r: 23, h: 3.8, ty: -2.4, sp: 0.12 }, play: { r: 15, h: 7, ty: 0.9, sp: 0.05 }, reveal: { r: 11, h: 3.5, ty: 1.6, sp: 0.18 }, final: { r: 21, h: 3, ty: -2.4 + 3.4, sp: 0.22 } };
   const camS = { ...SHOTS.lobby };
   // keep the face mostly toward the camera: orbit swings back and forth instead of full circles
   api._onShot = (name) => {
