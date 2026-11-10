@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#8ed1fc">
+<title>HVAC Showdown · Player</title>
+<link rel="icon" href="/ashrae-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;700;800;900&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/play.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body class="phone">
+<canvas id="bg3d" aria-hidden="true"></canvas>
+<header class="ph-top">
+  <div class="ph-logo"><img src="/ashrae-logo.png" width="150" height="150" alt="ASHRAE RIT Dubai Student Branch"></div>
+  <div class="ph-brand"><div class="label">ASHRAE · RIT Dubai</div><div class="ph-title">HVAC SHOWDOWN</div></div>
+  <div class="ph-badge" id="badge"></div>
+</header>
+<div class="strip" id="strip" hidden></div>
+<main id="app" aria-live="polite"></main>
+<div id="net" class="ph-net" role="status" hidden>Reconnecting…</div>
+<script type="module" src="/play.js"></script>
+</body>
+</html>

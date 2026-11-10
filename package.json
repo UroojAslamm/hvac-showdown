@@ -1,0 +1,14 @@
+{
+  "name": "hvac-showdown",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ASHRAE RIT Dubai 1v1 HVAC quiz: main screen + two phones",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
