@@ -42,13 +42,13 @@ function run(THREE, canvas, api, { phone = false } = {}) {
   };
   const box = (w, h, d, color, s) => ink(new THREE.Mesh(new THREE.BoxGeometry(w, h, d), toon(color)), s);
 
-  scene.add(new THREE.HemisphereLight(0xffffff, 0x8fb8de, 1.4));
+  scene.add(new THREE.HemisphereLight(0xe6d8ff, 0x5a3a8a, 1.2));
   const sun = new THREE.DirectionalLight(0xffffff, 2.2);
   sun.position.set(5, 10, 7);
   scene.add(sun);
 
   // Rooftop slab
-  const roof = box(18, 0.4, 11, 0xffd88a, 1.01);
+  const roof = box(18, 0.4, 11, 0x6b8f4e, 1.01);
   roof.position.y = -0.2;
   scene.add(roof);
   for (const [x, z] of [[-6, -3.5], [6.5, 3], [-5, 3.8]]) {
@@ -160,7 +160,7 @@ function run(THREE, canvas, api, { phone = false } = {}) {
 
   // Puffy clouds
   const clouds = [];
-  const cloudMat = toon(0xffffff);
+  const cloudMat = toon(0xf08fb0);
   const n = phone ? 4 : 7;
   for (let i = 0; i < n; i++) {
     const c = new THREE.Group();
